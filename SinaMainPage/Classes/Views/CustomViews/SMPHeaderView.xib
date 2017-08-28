@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMPHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="211"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RIa-xf-azc">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="211"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SMPHeaderIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Bdj-Mp-1tX">
+                    <rect key="frame" x="159.5" y="40" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="9Su-lq-0Ny"/>
+                        <constraint firstAttribute="width" constant="60" id="ktc-tv-hNx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="helfy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcO-st-Lwm">
+                    <rect key="frame" x="170" y="120" width="38" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JcO-st-Lwm" firstAttribute="centerX" secondItem="RIa-xf-azc" secondAttribute="centerX" id="EUH-nV-epA"/>
+                <constraint firstItem="RIa-xf-azc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZYl-Xi-rLV"/>
+                <constraint firstItem="RIa-xf-azc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aeY-BM-1XX"/>
+                <constraint firstAttribute="trailing" secondItem="RIa-xf-azc" secondAttribute="trailing" id="cdL-tv-Z1I"/>
+                <constraint firstItem="Bdj-Mp-1tX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="eWS-hI-0MT"/>
+                <constraint firstItem="JcO-st-Lwm" firstAttribute="top" secondItem="Bdj-Mp-1tX" secondAttribute="bottom" constant="20" id="kZf-F3-iky"/>
+                <constraint firstAttribute="bottom" secondItem="RIa-xf-azc" secondAttribute="bottom" id="nvD-Kj-la5"/>
+                <constraint firstItem="Bdj-Mp-1tX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qCl-If-cJO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="35.5" y="-174.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SMPHeaderIcon" width="300" height="300"/>
+    </resources>
+</document>
